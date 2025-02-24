@@ -14,13 +14,11 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
             transition: color 0.3s, transform 0.3s;
         }
-
         /* เอฟเฟกต์เมื่อเมาส์ hover ไปที่ชื่อ */
         .name-heading:hover {
             color: rgb(68, 35, 216);
             transform: scale(1.1);
         }
-
         /* สไตล์แถบเมนู (Navbar) ที่ทำให้มันล็อคอยู่ที่ด้านบน */
         header {
             position: fixed;
@@ -32,7 +30,6 @@
             z-index: 1000; /* ให้แถบเมนูอยู่เหนือเนื้อหาทั้งหมด */
             padding: 10px 20px;
         }
-
         /* ทำให้เมนูแสดงเป็นแนวนอน */
         nav ul {
             list-style-type: none;
@@ -41,26 +38,21 @@
             display: flex;
             justify-content: center;
         }
-
         nav ul li {
             margin: 0 15px;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 18px;
         }
-
         nav ul li a:hover {
             color: #f39c12; /* เปลี่ยนสีเมื่อ hover */
         }
-
         /* เพิ่มระยะห่างจากเนื้อหาเมื่อแถบเมนูล็อคอยู่ที่ด้านบน */
         body {
             margin-top: 80px; /* ขยับเนื้อหาให้พ้นจากแถบเมนู */
         }
-
         /* เพิ่ม media query สำหรับมือถือ */
         @media (max-width: 768px) {
             nav ul {
@@ -74,28 +66,23 @@
                 left: 0;
                 padding: 10px 0;
             }
-
             nav ul li {
                 margin: 10px 0;
             }
-
             .hamburger {
                 display: block;
                 cursor: pointer;
             }
-
             .hamburger div {
                 width: 25px;
                 height: 3px;
                 background-color: white;
                 margin: 5px 0;
             }
-
             .menu-active {
                 display: flex; /* แสดงเมนูเมื่อคลิก */
             }
         }
-
         /* สไตล์ปุ่ม Hamburger */
         .hamburger {
             display: none;
@@ -128,7 +115,6 @@
         <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
         <a href="index.html" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
     </section>
-
     <script>
         // ฟังก์ชันเปิด/ปิดเมนู
         function toggleMenu() {
