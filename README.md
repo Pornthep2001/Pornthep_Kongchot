@@ -18,7 +18,7 @@
         }
         /* เอฟเฟกต์เมื่อเมาส์ hover ไปที่ชื่อ */
         .name-heading:hover {
-            color: #e74c3c; /* เปลี่ยนเป็นสีแดงเมื่อ hover */
+            color:rgb(68, 35, 216); /* เปลี่ยนเป็นสีแดงเมื่อ hover */
             transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
         }
     </style>
