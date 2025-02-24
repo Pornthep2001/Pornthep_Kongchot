@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<img src="image.jpg" />
 
     <!-- Header (Fixed Navbar) -->
     <header>
