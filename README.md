@@ -73,7 +73,6 @@ body {
     </header>
     <!-- Main Content -->
     <section class="hero">
-        <h1 class="name-heading">Pornthep Kongchot</h1>
         <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
         <a href="#about" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
     </section>
