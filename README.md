@@ -70,8 +70,11 @@ body {
     </header>
     <!-- Main Content -->
     <section class="hero">
-        <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
-        <a href="#about" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
+    <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
+    <a href="index.md" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
+</section>
+
+
     </section>
 
 </body>
