@@ -62,18 +62,18 @@ body {
         <div class="logo">Resume</div>
         <nav>
             <ul>
-                <li><a="#">หน้าแรก</a></li>
-                <li><a="#">ประวัติส่วนตัว</a></li>
-                <li><a="#">ประสบการณ์การทำงาน</a></li>
-                <li><a="#">การศึกษา</a></li>
-                <li><a="#">ติดต่อ</a></li>
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">ประวัติส่วนตัว</a></li>
+                <li><a href="#">ประสบการณ์การทำงาน</a></li>
+                <li><a href="#">การศึกษา</a></li>
+                <li><a href="#">ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
     <!-- Main Content -->
     <section class="hero">
         <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
-      
+        <a href="#about" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
     </section>
 
 </body>
