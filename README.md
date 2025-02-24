@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Header (Fixed Navbar) -->
     <header>
         <div class="logo">Resume for Me</div>
@@ -21,7 +20,6 @@
             </ul>
         </nav>
     </header>
-
     <!-- Main Content -->
     <section class="hero">
     <img src="Profile.png"  width="200" height="200"/>
@@ -30,6 +28,5 @@
         <a href="#about" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
     </section>
 
-   
 </body>
 </html>
