@@ -10,7 +10,7 @@
         .name-heading {
             font-size: 36px;
             font-weight: bold;
-            color: #3498db; /* สีฟ้า */
+            color:rgb(83, 84, 85); /* สีฟ้า */
             text-transform: uppercase; /* ตัวพิมพ์ใหญ่ทั้งหมด */
             letter-spacing: 2px; /* ระยะห่างระหว่างตัวอักษร */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาตัวอักษร */
