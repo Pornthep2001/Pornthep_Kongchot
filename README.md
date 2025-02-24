@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>resume</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header (Fixed Navbar) -->
     <header>
         <div class="logo">IT Innovation</div>
         <nav>
@@ -18,10 +20,24 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <section class="hero">
         <h1>ยินดีต้อนรับสู่โลกแห่งนวัตกรรม</h1>
         <p>เราสร้างโซลูชันเทคโนโลยีล้ำสมัยเพื่อขับเคลื่อนธุรกิจของคุณ</p>
         <a href="#" class="btn">เริ่มต้นใช้งาน</a>
     </section>
+
+    <section class="content">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>เราเป็นทีมผู้เชี่ยวชาญด้านไอทีที่มุ่งมั่นพัฒนาเทคโนโลยีใหม่ ๆ</p>
+        <p>ให้บริการโซลูชันไอทีแบบครบวงจร ตอบโจทย์ทุกความต้องการ</p>
+    </section>
+
+    <section class="content">
+        <h2>บริการของเรา</h2>
+        <p>พัฒนาเว็บแอปพลิเคชัน, AI, Cloud Solutions และอีกมากมาย</p>
+    </section>
+
 </body>
 </html>
