@@ -26,7 +26,7 @@
 <body>
     <!-- Header (Fixed Navbar) -->
     <header>
-        <div class="logo">Pornthep Kongchot</div>
+        <div class="logo">Resume</div>
         <nav>
             <ul>
                 <li><a href="#">หน้าแรก</a></li>
