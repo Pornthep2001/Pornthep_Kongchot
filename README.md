@@ -69,9 +69,9 @@ body {
         </nav>
     </header>
     <!-- Main Content -->
-    <section class="hero">
+   <section class="hero">
     <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
-    <a href="index.md" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
+    <a href="index.html" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
 </section>
 
 
