@@ -1,125 +1,175 @@
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- เพิ่ม meta tag สำหรับการตอบสนองขนาดหน้าจอ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Pornthep Kongchot</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* เพิ่มสไตล์ให้กับชื่อ */
-        .name-heading {
-            font-size: 36px;
-            font-weight: bold;
-            color: rgb(83, 84, 85);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-            transition: color 0.3s, transform 0.3s;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        /* เอฟเฟกต์เมื่อเมาส์ hover ไปที่ชื่อ */
-        .name-heading:hover {
-            color: rgb(68, 35, 216);
-            transform: scale(1.1);
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            background-color: #f5f5f5;
+            overflow: hidden;
         }
-        /* สไตล์แถบเมนู (Navbar) ที่ทำให้มันล็อคอยู่ที่ด้านบน */
-        header {
+        /* Sidebar */
+        .sidebar {
             position: fixed;
-            top: 0;
             left: 0;
-            width: 100%;
-            background-color: #333; /* สีพื้นหลังแถบเมนู */
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
             color: white;
-            z-index: 1000; /* ให้แถบเมนูอยู่เหนือเนื้อหาทั้งหมด */
-            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            transition: width 0.3s;
         }
-        /* ทำให้เมนูแสดงเป็นแนวนอน */
+        .sidebar.collapsed {
+            width: 80px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
+            margin-top: 30px;
         }
         nav ul li {
-            margin: 0 15px;
+            width: 100%;
+            text-align: center;
         }
         nav ul li a {
+            display: block;
+            padding: 15px;
             color: white;
             text-decoration: none;
             font-size: 18px;
+            transition: background 0.3s;
         }
         nav ul li a:hover {
-            color: #f39c12; /* เปลี่ยนสีเมื่อ hover */
+            background-color: #f39c12;
         }
-        /* เพิ่มระยะห่างจากเนื้อหาเมื่อแถบเมนูล็อคอยู่ที่ด้านบน */
-        body {
-            margin-top: 80px; /* ขยับเนื้อหาให้พ้นจากแถบเมนู */
-        }
-        /* เพิ่ม media query สำหรับมือถือ */
-        @media (max-width: 768px) {
-            nav ul {
-                display: none; /* ซ่อนเมนูเมื่อดูในมือถือ */
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                background-color: #333;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                padding: 10px 0;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            .hamburger {
-                display: block;
-                cursor: pointer;
-            }
-            .hamburger div {
-                width: 25px;
-                height: 3px;
-                background-color: white;
-                margin: 5px 0;
-            }
-            .menu-active {
-                display: flex; /* แสดงเมนูเมื่อคลิก */
-            }
-        }
-        /* สไตล์ปุ่ม Hamburger */
-        .hamburger {
+        .toggle-btn {
             display: none;
-            flex-direction: column;
+            position: absolute;
+            top: 20px;
+            right: -40px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
             cursor: pointer;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .content {
+            margin-left: 250px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+        .content.collapsed {
+            margin-left: 80px;
+        }
+        .hero {
+            background-color: white;
+            border-radius: 10px;
+            max-width: 800px;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .content {
+                margin-left: 200px;
+            }
+            .toggle-btn {
+                display: block;
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 0;
+                display: none;
+            }
+            .content {
+                margin-left: 0;
+            }
+            .sidebar.collapsed {
+                width: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header (Fixed Navbar) -->
-    <header>
+    <div class="sidebar">
         <div class="logo">Resume</div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
         <nav>
-            <ul id="menu">
-                <li><a href="#">หน้าแรก</a></li>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
                 <li><a href="#">ประวัติส่วนตัว</a></li>
                 <li><a href="#">ประสบการณ์การทำงาน</a></li>
                 <li><a href="#">การศึกษา</a></li>
                 <li><a href="#">ติดต่อ</a></li>
             </ul>
         </nav>
-    </header>
-    <!-- Main Content -->
-   <section class="hero">
-        <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
-        <a href="index.html" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
-    </section>
+    </div>
+    <div class="content">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <section class="hero">
+            <img src="Profile.png" alt="Profile Picture">
+            <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
+            <a href="index.html" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
+        </section>
+    </div>
     <script>
-        // ฟังก์ชันเปิด/ปิดเมนู
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('menu-active');
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const content = document.querySelector('.content');
+            sidebar.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
         }
     </script>
 </body>
