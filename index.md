@@ -17,6 +17,7 @@
             margin: 0;
             height: 100vh;
             background-color: #f5f5f5;
+            overflow: hidden;
         }
         /* Sidebar */
         .sidebar {
@@ -29,7 +30,6 @@
             color: white;
             display: flex;
             flex-direction: column;
-            align-items: center;
             padding-top: 20px;
             transition: width 0.3s;
         }
@@ -44,8 +44,8 @@
         }
         nav ul {
             list-style-type: none;
-            width: 100%;
             padding: 0;
+            margin-top: 30px;
         }
         nav ul li {
             width: 100%;
@@ -65,13 +65,15 @@
         .toggle-btn {
             display: none;
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: -40px;
             background-color: #333;
             color: white;
             padding: 10px;
             border: none;
             cursor: pointer;
+            border-radius: 50%;
+            z-index: 1;
         }
         .content {
             margin-left: 250px;
@@ -125,6 +127,18 @@
             }
             .toggle-btn {
                 display: block;
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 0;
+                display: none;
+            }
+            .content {
+                margin-left: 0;
+            }
+            .sidebar.collapsed {
+                width: 0;
             }
         }
     </style>
