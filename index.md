@@ -120,7 +120,6 @@
             </ul>
         </nav>
     </div>
-    
     <div class="content">
         <section class="hero">
             <img src="Profile.png" alt="Profile Picture">
