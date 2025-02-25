@@ -119,4 +119,14 @@ nav ul li a:hover {
     nav ul li {
         margin: 5px 0;
     }
+    .hero img {
+        float: left;
+        width: 150px;
+        margin-right: 20px; /* ปรับระยะห่างระหว่างรูปกับข้อความ */
+        border-radius: 10px;
+    }
+    .hero p {
+        overflow: hidden; /* ป้องกันการเหลื่อมของ layout */
+    }
+    
 }
