@@ -31,11 +31,16 @@
             flex-direction: column;
             align-items: center;
             padding-top: 20px;
+            transition: width 0.3s;
+        }
+        .sidebar.collapsed {
+            width: 80px;
         }
         .logo {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
+            text-align: center;
         }
         nav ul {
             list-style-type: none;
@@ -57,7 +62,17 @@
         nav ul li a:hover {
             background-color: #f39c12;
         }
-        /* Main Content */
+        .toggle-btn {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
         .content {
             margin-left: 250px;
             flex-grow: 1;
@@ -66,6 +81,10 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+            transition: margin-left 0.3s;
+        }
+        .content.collapsed {
+            margin-left: 80px;
         }
         .hero {
             background-color: white;
@@ -104,6 +123,9 @@
             .content {
                 margin-left: 200px;
             }
+            .toggle-btn {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -121,11 +143,20 @@
         </nav>
     </div>
     <div class="content">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <section class="hero">
             <img src="Profile.png" alt="Profile Picture">
             <p>ยินดีต้อนรับสู่ประวัติส่วนตัวของ Pornthep Kongchot ผู้เชี่ยวชาญด้านไอที</p>
             <a href="index.html" class="btn">เรียนรู้เพิ่มเติมเกี่ยวกับฉัน</a>
         </section>
     </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const content = document.querySelector('.content');
+            sidebar.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
+        }
+    </script>
 </body>
 </html>
