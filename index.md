@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Profile</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -159,7 +159,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <img src="/w3images/rocks.jpg" style="width:100%">
         <img src="/w3images/sailboat.jpg" style="width:100%">
       </div>
-
       <div class="w3-half">
         <img src="/w3images/underwater.jpg" style="width:100%">
         <img src="/w3images/chef.jpg" style="width:100%">
@@ -170,7 +169,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
   <!-- End Portfolio Section -->
   </div>
-
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
