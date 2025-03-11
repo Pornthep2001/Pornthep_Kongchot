@@ -251,13 +251,14 @@
     }
 
     // เมื่อหน้าเว็บโหลดเสร็จ จะเริ่ม animate ความกว้างของ progress bar
-    document.addEventListener("DOMContentLoaded", function(){
-      setTimeout(function(){
+    window.onload = function() {
+    setTimeout(function() {
         document.getElementById("skill1").style.width = "95%";
         document.getElementById("skill2").style.width = "85%";
         document.getElementById("skill3").style.width = "80%";
-      }, 500);
-    });
+    }, 500);
+};
+
   </script>
 </body>
 </html>
