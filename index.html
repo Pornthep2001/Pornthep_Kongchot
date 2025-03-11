@@ -47,66 +47,61 @@
       <p>CONTACT</p>
     </a>
     <!-- ตัวนับจำนวนผู้เข้าชม -->
-<div id="visitorCounter" class="w3-padding w3-center w3-text-white" style="margin-top: 20px;">
-  <p>👁️ Total Visitors: <span id="visitorCount">0</span></p>
-</div>
+    <div id="visitorCounter" class="w3-padding w3-center w3-text-white" style="margin-top: 20px;">
+      <p>👁️ Total Visitors: <span id="visitorCount">0</span></p>
+    </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  let visitorCount = localStorage.getItem("visitorCount");
-  
-  if (!localStorage.getItem("visitedBefore")) {
-      // ผู้ใช้ใหม่
-      localStorage.setItem("visitedBefore", true);
-      visitorCount = visitorCount ? parseInt(visitorCount) + 1 : 1;
-      localStorage.setItem("visitorCount", visitorCount);
-  }
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let visitorCount = localStorage.getItem("visitorCount");
 
-  document.getElementById("visitorCount").textContent = visitorCount;
-});
-</script>
+      if (!localStorage.getItem("visitedBefore")) {
+          // ผู้ใช้ใหม่
+          localStorage.setItem("visitedBefore", true);
+          visitorCount = visitorCount ? parseInt(visitorCount) + 1 : 1;
+          localStorage.setItem("visitorCount", visitorCount);
+      }
+
+      document.getElementById("visitorCount").textContent = visitorCount;
+    });
+    </script>
 
   </nav>
 
- <!-- Navbar สำหรับจอเล็ก -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
-    <a href="#education" class="w3-bar-item w3-button" style="width:20% !important">EDUCATION</a>
-    <a href="#Work" class="w3-bar-item w3-button" style="width:20% !important">WORK</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
-  </div>
-</div>
-
-
-<!-- เนื้อหาหลัก -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home Section -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-xxlarge w3-animate-left"><span class="w3-hide-small">I'm</span> Pornthep Kongchot</h1>
-    <p class="w3-animate-right">Resume For Me.</p>
-    <div class="w3-animate-zoom">
-      <img src="3.jpg" alt="Pornthep Kongchot" class="w3-image w3-round-xlarge" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" width="500" height="600">
+  <!-- Navbar สำหรับจอเล็ก -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+      <a href="#education" class="w3-bar-item w3-button" style="width:20% !important">EDUCATION</a>
+      <a href="#Work" class="w3-bar-item w3-button" style="width:20% !important">WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
     </div>
-  </header>
-</div>
+  </div>
 
-
+  <!-- เนื้อหาหลัก -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home Section -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-xxlarge w3-animate-left"><span class="w3-hide-small">I'm</span> Pornthep Kongchot</h1>
+      <p class="w3-animate-right">Resume For Me.</p>
+      <div class="w3-animate-zoom">
+        <img src="3.jpg" alt="Pornthep Kongchot" class="w3-image w3-round-xlarge" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" width="500" height="600">
+      </div>
+    </header>
 
     <!-- About Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-64 w3-hover-opacity" id="about">
-        <h2 class="w3-text-light-grey">My Name</h2>
-        <hr style="width:200px" class="w3-opacity">
-        <p style="color: white;">ชื่อนายพรเทพ คงโชติ</p>
-        <p style="color: white;">มีประสบการณ์ด้าน IT Support ในการให้บริการลูกค้า, แก้ไขปัญหา และให้การสนับสนุนทางเทคนิค</p>
-        <p style="color: white;">สามารถวิเคราะห์และแก้ไข ปัญหาด้านซอฟต์แวร์และฮาร์ดแวร์ เพื่อให้การทำงานของผู้ใช้เป็นไปอย่างราบรื่น มีทักษะการสื่อสารที่ดี</p>
-        <p style="color: white;">สามารถเข้าใจปัญหาของลูกค้าและให้คำแนะนำหรือแก้ไขได้อย่างมีประสิทธิภาพ มุ่งมั่นในการให้บริการที่เป็นเลิศและสร้างความพึงพอใจให้กับลูกค้า</p>
-      </div>
-    
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64 w3-hover-opacity" id="about">
+      <h2 class="w3-text-light-grey">My Name</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p style="color: white;">ชื่อนายพรเทพ คงโชติ</p>
+      <p style="color: white;">มีประสบการณ์ด้าน IT Support ในการให้บริการลูกค้า, แก้ไขปัญหา และให้การสนับสนุนทางเทคนิค</p>
+      <p style="color: white;">สามารถวิเคราะห์และแก้ไข ปัญหาด้านซอฟต์แวร์และฮาร์ดแวร์ เพื่อให้การทำงานของผู้ใช้เป็นไปอย่างราบรื่น มีทักษะการสื่อสารที่ดี</p>
+      <p style="color: white;">สามารถเข้าใจปัญหาของลูกค้าและให้คำแนะนำหรือแก้ไขได้อย่างมีประสิทธิภาพ มุ่งมั่นในการให้บริการที่เป็นเลิศและสร้างความพึงพอใจให้กับลูกค้า</p>
+    </div>
+
     <!-- Education Section -->
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="education">
-    <div class="w3-content w3-padding-64" id="education">
       <h2 class="w3-text-light-grey">🎓 Education (ประวัติการศึกษา)</h2>
       <hr style="width:200px" class="w3-opacity">
       <div class="w3-row-padding" style="margin:0 -16px">
@@ -117,8 +112,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <li class="w3-padding-16">โรงเรียนบางพลีราษฎร์บํารุง</li>
             <li class="w3-padding-16">2012 - 2016</li>
             <li class="w3-padding-16">GPA: 3.5/4.0</li>
-            <li class="w3-padding-16">
-            </li>
           </ul>
         </div>
         <!-- Example: High School -->
@@ -128,74 +121,42 @@ document.addEventListener("DOMContentLoaded", function () {
             <li class="w3-padding-16">มหาวิทยาลัยราชภัฏสวนสุนันทา</li>
             <li class="w3-padding-16">2009 - 2012</li>
             <li class="w3-padding-16">Major: Science</li>
-            <li class="w3-padding-16">
-            </li>
           </ul>
         </div>
       </div>
     </div>
 
- <!-- Work Experience Section -->
-</head>
-<body>
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Work">
-    <div class="experience-section">
+    <!-- Work Experience Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Work">
       <h2 class="w3-text-light-grey">💼 Work Experience (ประสบการณ์การทำงาน)</h2>
       <hr style="width: 200px; border-color: #f1c40f;">
-  
       <div class="w3-container w3-padding-16">
-        <!-- ตำแหน่งงานที่ 1 -->
         <div class="w3-card experience-card">
           <i class="fa fa-laptop icon"></i>
           <h3>Carmen Software</h3>
           <p><strong style="color: white;">ตำแหน่ง:</strong> <span style="color: white;">HelpDesk Support</span></p>
           <p><strong style="color: white;">อายุงาน:</strong> <span style="color: white;">2 ปี</span></p>
           <p><strong style="color: white;">รายละเอียด:</strong> <span style="color: white;">สนับสนุนการใช้งานซอฟต์แวร์ในเครือโรงแรม แก้ไขปัญหาทางเทคนิค</span></p>
-          
-          <!-- ปุ่มไปหน้า index2.html -->
           <a href="index2.html" class="w3-button w3-yellow w3-hover-black w3-margin-top">ดูเพิ่มเติม</a>
         </div>
       </div>
     </div>
-  </div>
-  
-
-      <h3 class="w3-padding-16 w3-text-light-grey"style="text-align: left;">My Skills</h3>
-      <div class="w3-container">
-        <!-- Photography -->
-        <p class="w3-wide">Photography <span class="w3-right">95%</span></p>
-        <div class="w3-light-grey w3-round-xlarge">
-          <div id="skill1" class="w3-container w3-center w3-round-xlarge w3-dark-grey" style="height:28px; width:0%; transition: width 2s;">95%</div>
-        </div>
-        <!-- Web Design -->
-        <p class="w3-wide">Web Design <span class="w3-right">85%</span></p>
-        <div class="w3-light-grey w3-round-xlarge">
-          <div id="skill2" class="w3-container w3-center w3-round-xlarge w3-dark-grey" style="height:28px; width:0%; transition: width 2s;">85%</div>
-        </div>
-        <!-- Photoshop -->
-        <p class="w3-wide">Photoshop <span class="w3-right">80%</span></p>
-        <div class="w3-light-grey w3-round-xlarge">
-          <div id="skill3" class="w3-container w3-center w3-round-xlarge w3-dark-grey" style="height:28px; width:0%; transition: width 2s;">80%</div>
-        </div>
-      </div>
-    </div>
-    </div>
 
     <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey" style="text-align: left;"id="contact">
-      <h2 class="w3-text-light-grey"style="text-align: left;">Contact Me</h2>
+    <div class="w3-padding-64 w3-content w3-text-grey" style="text-align: left;" id="contact">
+      <h2 class="w3-text-light-grey" style="text-align: left;">Contact Me</h2>
       <hr style="width:200px" class="w3-opacity">
       <div class="w3-section">
         <p>
-          <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"style="text-align: left;"></i> 
+          <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right" style="text-align: left;"></i> 
           สมบุญ1 อพาร์ทเม้นท์ 382 ซอยสุดเกษม แขวงวัดท่าพระ, เขตบางกอกใหญ่, กรุงเทพมหานคร 10600
         </p>
         <p>
-          <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"style="text-align: left;"></i> 
+          <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right" style="text-align: left;"></i> 
           Phone: +66 9672808876
         </p>
         <p>
-          <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"style="text-align: left;"></i> 
+          <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right" style="text-align: left;"></i> 
           Email: porntep195@mail.com
         </p>
       </div>
@@ -206,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <p><input class="w3-input w3-padding-16" type="email" name="Email" placeholder="Email" required></p>
         <p><input class="w3-input w3-padding-16" type="text" name="Subject" placeholder="Subject" required></p>
         <p><textarea class="w3-input w3-padding-16" name="Message" placeholder="Message" required></textarea></p>
-        <p><button class="w3-button w3-light-grey w3-padding-large" type="submit"style="text-align: left;">SEND MESSAGE</button></p>
+        <p><button class="w3-button w3-light-grey w3-padding-large" type="submit" style="text-align: left;">SEND MESSAGE</button></p>
       </form>
     </div>
 
@@ -219,65 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <i class="fa fa-instagram w3-hover-opacity"></i>
       </a>
     </footer>
-    
+
   </div>
-  <style>
-    body {
-      font-family: "Montserrat", sans-serif;
-      background-color: #121212;
-      color: white;
-      text-align: center;
-    }
-  
-    .experience-section {
-      padding: 20px 10px;
-    }
-  
-    .experience-card {
-      background: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-      margin-bottom: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-  
-    .experience-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
-    }
-  
-    .experience-card h3 {
-      color: #f1c40f;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-  
-    .experience-card p {
-      font-size: 16px;
-      margin: 5px 0;
-    }
-  
-    .icon {
-      font-size: 40px;
-      color: #f1c40f;
-      margin-bottom: 10px;
-    }
-  </style>
-  <!-- JavaScript สำหรับ Slider และ Progress Bar -->
-  <script>
-   window.onload = function() {
-    setTimeout(function() {
-        let skill1 = document.getElementById("skill1");
-        let skill2 = document.getElementById("skill2");
-        let skill3 = document.getElementById("skill3");
-
-        if (skill1) skill1.style.width = "95%";
-        if (skill2) skill2.style.width = "85%";
-        if (skill3) skill3.style.width = "80%";
-    }, 500);
-};
-
-  </script>
 </body>
 </html>
