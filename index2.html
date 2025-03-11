@@ -12,6 +12,7 @@
       background-color: #121212;
       color: white;
       text-align: center;
+      padding-top: 60px; /* ป้องกันเนื้อหาถูกบังโดย Navbar */
     }
 
     /* เมนูนำทาง */
@@ -24,6 +25,8 @@
       top: 0;
       left: 0;
       z-index: 1000;
+      display: flex;
+      justify-content: center;
     }
 
     .navbar a {
@@ -31,6 +34,7 @@
       padding: 14px 20px;
       text-decoration: none;
       display: inline-block;
+      font-weight: bold;
     }
 
     .navbar a:hover {
@@ -39,7 +43,7 @@
     }
 
     .experience-section {
-      padding: 100px 10px 50px; /* เผื่อพื้นที่ให้เมนู */
+      padding: 20px;
     }
 
     .experience-card {
@@ -96,7 +100,9 @@
   <!-- เมนูนำทาง -->
   <div class="navbar">
     <a href="index.html"><i class="fa fa-home"></i> หน้าแรก</a>
-    <a href="#work"><i class="fa fa-briefcase"></i> ประสบการณ์การทำงาน</a>
+    <a href="index.html#about"><i class="fa fa-user"></i> เกี่ยวกับฉัน</a>
+    <a href="index.html#education"><i class="fa fa-graduation-cap"></i> การศึกษา</a>
+    <a href="index.html#work"><i class="fa fa-briefcase"></i> ประสบการณ์ทำงาน</a>
   </div>
 
   <div class="experience-section" id="work">
