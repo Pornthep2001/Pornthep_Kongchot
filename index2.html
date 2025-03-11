@@ -14,8 +14,32 @@
       text-align: center;
     }
 
+    /* เมนูนำทาง */
+    .navbar {
+      width: 100%;
+      background-color: #1e1e1e;
+      overflow: hidden;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #f1c40f;
+      color: black;
+    }
+
     .experience-section {
-      padding: 50px 10px;
+      padding: 100px 10px 50px; /* เผื่อพื้นที่ให้เมนู */
     }
 
     .experience-card {
@@ -48,11 +72,34 @@
       color: #f1c40f;
       margin-bottom: 10px;
     }
+
+    /* ปุ่มย้อนกลับ */
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f1c40f;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #e1b700;
+    }
   </style>
 </head>
 <body>
 
-  <div class="experience-section">
+  <!-- เมนูนำทาง -->
+  <div class="navbar">
+    <a href="index.html"><i class="fa fa-home"></i> หน้าแรก</a>
+    <a href="#work"><i class="fa fa-briefcase"></i> ประสบการณ์การทำงาน</a>
+  </div>
+
+  <div class="experience-section" id="work">
     <h2 class="w3-text-light-grey">💼 Work Experience (ประสบการณ์การทำงาน)</h2>
     <hr style="width: 200px; border-color: #f1c40f;">
 
@@ -84,6 +131,9 @@
         <p><strong>รายละเอียด:</strong> บริหารจัดการเซิร์ฟเวอร์ ดูแลฐานข้อมูล และเพิ่มประสิทธิภาพระบบ</p>
       </div>
     </div>
+
+    <!-- ปุ่มย้อนกลับไปหน้าแรก -->
+    <a href="index.html" class="back-button"><i class="fa fa-arrow-left"></i> ย้อนกลับ</a>
   </div>
 
 </body>
