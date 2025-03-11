@@ -46,6 +46,26 @@
       <i class="fa fa-envelope w3-xxlarge"></i>
       <p>CONTACT</p>
     </a>
+    <!-- ตัวนับจำนวนผู้เข้าชม -->
+<div id="visitorCounter" class="w3-padding w3-center w3-text-white" style="margin-top: 20px;">
+  <p>👁️ Total Visitors: <span id="visitorCount">0</span></p>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let visitorCount = localStorage.getItem("visitorCount");
+  
+  if (!localStorage.getItem("visitedBefore")) {
+      // ผู้ใช้ใหม่
+      localStorage.setItem("visitedBefore", true);
+      visitorCount = visitorCount ? parseInt(visitorCount) + 1 : 1;
+      localStorage.setItem("visitorCount", visitorCount);
+  }
+
+  document.getElementById("visitorCount").textContent = visitorCount;
+});
+</script>
+
   </nav>
 
  <!-- Navbar สำหรับจอเล็ก -->
@@ -199,26 +219,7 @@
         <i class="fa fa-instagram w3-hover-opacity"></i>
       </a>
     </footer>
-    <!-- ตัวนับจำนวนผู้เข้าชม -->
-<div id="visitorCounter" class="w3-padding w3-center w3-text-white" style="margin-top: 20px;">
-  <p>👁️ Total Visitors: <span id="visitorCount">0</span></p>
-</div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  let visitorCount = localStorage.getItem("visitorCount");
-  
-  if (!localStorage.getItem("visitedBefore")) {
-      // ผู้ใช้ใหม่
-      localStorage.setItem("visitedBefore", true);
-      visitorCount = visitorCount ? parseInt(visitorCount) + 1 : 1;
-      localStorage.setItem("visitorCount", visitorCount);
-  }
-
-  document.getElementById("visitorCount").textContent = visitorCount;
-});
-</script>
-
+    
   </div>
   <style>
     body {
