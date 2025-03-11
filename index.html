@@ -231,31 +231,15 @@
   </style>
   <!-- JavaScript สำหรับ Slider และ Progress Bar -->
   <script>
-    
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slides[slideIndex-1].style.display = "block";  
-    }
-
-    // เมื่อหน้าเว็บโหลดเสร็จ จะเริ่ม animate ความกว้างของ progress bar
-    window.onload = function() {
+   window.onload = function() {
     setTimeout(function() {
-        document.getElementById("skill1").style.width = "95%";
-        document.getElementById("skill2").style.width = "85%";
-        document.getElementById("skill3").style.width = "80%";
+        let skill1 = document.getElementById("skill1");
+        let skill2 = document.getElementById("skill2");
+        let skill3 = document.getElementById("skill3");
+
+        if (skill1) skill1.style.width = "95%";
+        if (skill2) skill2.style.width = "85%";
+        if (skill3) skill3.style.width = "80%";
     }, 500);
 };
 
