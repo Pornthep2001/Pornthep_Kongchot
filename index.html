@@ -65,31 +65,14 @@
 <!-- Navbar สำหรับจอเล็ก -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <!-- เพิ่มปุ่มเมนูแบบ Dropdown สำหรับมือถือ -->
-    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-hover-black" style="width:20% !important" onclick="toggleNavbar()">&#9776;</a>
-  </div>
-
-  <!-- เมนูที่ซ่อนในมือถือ -->
-  <div id="mobileMenu" class="w3-dropdown-content w3-bar-block w3-card-4 w3-black" style="display: none;">
-    <a href="#" class="w3-bar-item w3-button w3-hover-black">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hover-black">ABOUT</a>
-    <a href="#education" class="w3-bar-item w3-button w3-hover-black">EDUCATION</a>
-    <a href="#Work" class="w3-bar-item w3-button w3-hover-black">WORK</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-black">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black" style="width:20% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black" style="width:20% !important">ABOUT</a>
+    <a href="#education" class="w3-bar-item w3-button w3-hover-black" style="width:20% !important">EDUCATION</a>
+    <a href="#Work" class="w3-bar-item w3-button w3-hover-black" style="width:20% !important">WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-black" style="width:20% !important">CONTACT</a>
   </div>
 </div>
 
-<!-- Script สำหรับเปิด/ปิดเมนู -->
-<script>
-  function toggleNavbar() {
-    var menu = document.getElementById("mobileMenu");
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
-    }
-  }
-</script>
 
 
 <!-- เนื้อหาหลัก -->
