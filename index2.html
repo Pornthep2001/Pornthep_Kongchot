@@ -12,34 +12,59 @@
       background-color: #121212;
       color: white;
       text-align: center;
-      padding-top: 60px; /* ป้องกันเนื้อหาถูกบังโดย Navbar */
+      padding-top: 60px;
     }
 
     /* เมนูนำทาง */
     .navbar {
       width: 100%;
       background-color: #1e1e1e;
-      overflow: hidden;
-      padding: 10px 0;
       position: fixed;
       top: 0;
       left: 0;
       z-index: 1000;
       display: flex;
       justify-content: center;
+      padding: 10px 0;
     }
 
     .navbar a {
       color: white;
       padding: 14px 20px;
       text-decoration: none;
-      display: inline-block;
       font-weight: bold;
     }
 
     .navbar a:hover {
       background-color: #f1c40f;
       color: black;
+    }
+
+    /* Sidebar */
+    .w3-sidebar {
+      width: 80px;
+      background-color: #1e1e1e;
+      height: 100vh;
+      overflow-y: auto;
+      transition: width 0.3s;
+    }
+
+    .w3-sidebar i {
+      font-size: 24px;
+    }
+
+    .w3-sidebar p {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .w3-bar-item {
+      padding: 15px 5px;
+    }
+
+    .w3-bar-item:hover {
+      background-color: #f1c40f !important;
+      color: black !important;
     }
 
     .experience-section {
@@ -52,7 +77,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
       margin-bottom: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .experience-card:hover {
@@ -62,22 +87,13 @@
 
     .experience-card h3 {
       color: #f1c40f;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .experience-card p {
-      font-size: 16px;
-      margin: 5px 0;
     }
 
     .icon {
       font-size: 40px;
       color: #f1c40f;
-      margin-bottom: 10px;
     }
 
-    /* ปุ่มย้อนกลับ */
     .back-button {
       display: inline-block;
       margin-top: 20px;
@@ -96,73 +112,40 @@
   </style>
 </head>
 <body>
-
-  <!-- เมนูนำทาง -->
   <div class="navbar">
     <a href="index.html"><i class="fa fa-home"></i> HOME</a>
     <a href="index.html#about"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="index.html#education"><i class="fa fa-graduation-cap"></i>Education</a>
-    <a href="index.html#work"><i class="fa fa-briefcase"></i> Work Experience</a>
+    <a href="index.html#education"><i class="fa fa-graduation-cap"></i> EDUCATION</a>
+    <a href="index.html#work"><i class="fa fa-briefcase"></i> WORK</a>
   </div>
 
-  <body class="w3-black">
-
-    <style>
-      /* ปรับความสูงให้ sidebar เต็มหน้าจอ */
-      .w3-sidebar {
-        height: 100vh; /* 100% ของความสูงหน้าจอ */
-        overflow-y: hidden; /* ป้องกันการเลื่อน */
-      }
-    </style>
-    
-  <!-- Sidebar (สำหรับจอใหญ่) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- ลิงค์หน้าแรก -->
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-home w3-xxlarge"></i>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">
+      <i class="fa fa-home"></i>
       <p>HOME</p>
     </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-user w3-xxlarge"></i>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black">
+      <i class="fa fa-user"></i>
       <p>ABOUT</p>
     </a>
-    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-graduation-cap w3-xxlarge"></i>
-      <p>Education</p>
-    </a>    
-    <a href="#Work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-desktop w3-xxlarge"></i>
-      <p>Work Experience</p>
+    <a href="#education" class="w3-bar-item w3-button w3-hover-black">
+      <i class="fa fa-graduation-cap"></i>
+      <p>EDUCATION</p>
     </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
+    <a href="#Work" class="w3-bar-item w3-button w3-hover-black">
+      <i class="fa fa-briefcase"></i>
+      <p>WORK</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-black">
+      <i class="fa fa-envelope"></i>
       <p>CONTACT</p>
     </a>
-    <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-download w3-xxlarge"></i>
-      <p>Download Resume</p>
-    </a>
   </nav>
-  
-  <!-- Navbar สำหรับจอเล็ก -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <!-- เมนูที่สามารถเลื่อนได้ -->
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: flex; flex-wrap: nowrap; justify-content: flex-start; padding: 10px 0; overflow-x: auto;">
-      <a href="#" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">ABOUT</a>
-      <a href="#education" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">EDUCATION</a>
-      <a href="#Work" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">WORK</a>
-      <a href="#contact" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">CONTACT</a>
-      <a href="#download" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">Download Resume</a>
-    </div>
-  </div>
-  
-  <div class="experience-section" id="work">
-    <h2 class="w3-text-light-grey">Carmen Software</h2>
-    <hr style="width: 200px; border-color: #f1c40f;">
 
+  <div class="experience-section" id="work">
+    <h2 class="w3-text-light-grey">Work Experience</h2>
+    <hr style="width: 200px; border-color: #f1c40f;">
     <div class="w3-container w3-padding-16">
-      <!-- ตำแหน่งงานที่ 1 -->
       <div class="w3-card experience-card">
         <i class="fa fa-laptop icon"></i>
         <h3>Carmen Software</h3>
@@ -170,11 +153,8 @@
         <p><strong>อายุงาน:</strong> 2 ปี</p>
         <p><strong>รายละเอียด:</strong> สนับสนุนการใช้งานซอฟต์แวร์ในเครือโรงแรม แก้ไขปัญหาทางเทคนิค</p>
       </div>
-
-     
-    <!-- ปุ่มย้อนกลับไปหน้าแรก -->
+    </div>
     <a href="index.html" class="back-button"><i class="fa fa-arrow-left"></i> ย้อนกลับ</a>
   </div>
-
 </body>
 </html>
