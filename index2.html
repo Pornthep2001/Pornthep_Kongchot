@@ -105,6 +105,58 @@
     <a href="index.html#work"><i class="fa fa-briefcase"></i> Work Experience</a>
   </div>
 
+  <body class="w3-black">
+
+    <style>
+      /* ปรับความสูงให้ sidebar เต็มหน้าจอ */
+      .w3-sidebar {
+        height: 100vh; /* 100% ของความสูงหน้าจอ */
+        overflow-y: hidden; /* ป้องกันการเลื่อน */
+      }
+    </style>
+    
+  <!-- Sidebar (สำหรับจอใหญ่) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- ลิงค์หน้าแรก -->
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-graduation-cap w3-xxlarge"></i>
+      <p>Education</p>
+    </a>    
+    <a href="#Work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-desktop w3-xxlarge"></i>
+      <p>Work Experience</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+    <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-download w3-xxlarge"></i>
+      <p>Download Resume</p>
+    </a>
+  </nav>
+  
+  <!-- Navbar สำหรับจอเล็ก -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <!-- เมนูที่สามารถเลื่อนได้ -->
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: flex; flex-wrap: nowrap; justify-content: flex-start; padding: 10px 0; overflow-x: auto;">
+      <a href="#" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">ABOUT</a>
+      <a href="#education" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">EDUCATION</a>
+      <a href="#Work" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">CONTACT</a>
+      <a href="#download" class="w3-bar-item w3-button" style="flex: 0 0 auto; text-align: center; padding: 10px 20px; margin: 5px;">Download Resume</a>
+    </div>
+  </div>
+  
   <div class="experience-section" id="work">
     <h2 class="w3-text-light-grey">Carmen Software</h2>
     <hr style="width: 200px; border-color: #f1c40f;">
