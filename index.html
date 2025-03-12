@@ -23,6 +23,14 @@
 </head>
 <body class="w3-black">
 
+  <style>
+    /* ปรับความสูงให้ sidebar เต็มหน้าจอ */
+    .w3-sidebar {
+      height: 100vh; /* 100% ของความสูงหน้าจอ */
+      overflow-y: hidden; /* ป้องกันการเลื่อน */
+    }
+  </style>
+  
   <!-- Sidebar (สำหรับจอใหญ่) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- ลิงค์หน้าแรก -->
@@ -51,6 +59,7 @@
       <p>download Resume</p>
     </a>
   </nav>
+  
 
  <!-- Navbar สำหรับจอเล็ก -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
