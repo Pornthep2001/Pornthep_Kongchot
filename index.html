@@ -62,36 +62,14 @@
 
 <!-- Navbar สำหรับจอเล็ก -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <!-- Hamburger Menu Button -->
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-small" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%);">
-    <button class="w3-bar-item w3-button w3-xxlarge" onclick="toggleMenu()">
-      <i class="fa fa-bars"></i> <!-- Hamburger Icon -->
-    </button>
-  </div>
-
-  <!-- เมนูที่สามารถซ่อนได้ -->
-  <div id="menuItems" class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small w3-hide" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px 0;">
-    <a href="#" class="w3-bar-item w3-button w3-hover-opacity w3-text-white w3-padding-large" style="width: 100%; margin: 5px 0; border-radius: 4px;">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hover-opacity w3-text-white w3-padding-large" style="width: 100%; margin: 5px 0; border-radius: 4px;">ABOUT</a>
-    <a href="#education" class="w3-bar-item w3-button w3-hover-opacity w3-text-white w3-padding-large" style="width: 100%; margin: 5px 0; border-radius: 4px;">EDUCATION</a>
-    <a href="#Work" class="w3-bar-item w3-button w3-hover-opacity w3-text-white w3-padding-large" style="width: 100%; margin: 5px 0; border-radius: 4px;">WORK</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hover-opacity w3-text-white w3-padding-large" style="width: 100%; margin: 5px 0; border-radius: 4px;">CONTACT</a>
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="font-size: 16px; display: flex; flex-wrap: wrap; justify-content: space-evenly; padding: 10px 0;">
+    <a href="#" class="w3-bar-item w3-button w3-hover-black" style="width: 100%; text-align: center;">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black" style="width: 100%; text-align: center;">ABOUT</a>
+    <a href="#education" class="w3-bar-item w3-button w3-hover-black" style="width: 100%; text-align: center;">EDUCATION</a>
+    <a href="#Work" class="w3-bar-item w3-button w3-hover-black" style="width: 100%; text-align: center;">WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-black" style="width: 100%; text-align: center;">CONTACT</a>
   </div>
 </div>
-
-<script>
-  // ฟังก์ชันในการซ่อน/แสดงเมนู
-  function toggleMenu() {
-    var menu = document.getElementById("menuItems");
-    if (menu.classList.contains("w3-hide")) {
-      menu.classList.remove("w3-hide");
-      menu.classList.add("w3-show");
-    } else {
-      menu.classList.remove("w3-show");
-      menu.classList.add("w3-hide");
-    }
-  }
-</script>
 
 
 
