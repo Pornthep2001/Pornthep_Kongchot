@@ -291,17 +291,16 @@
   </style>
   <!-- JavaScript สำหรับ Slider และ Progress Bar -->
   <script>
-   window.onload = function() {
+window.onload = function() {
     setTimeout(function() {
-        let skill1 = document.getElementById("skill1");
-        let skill2 = document.getElementById("skill2");
-        let skill3 = document.getElementById("skill3");
-
-        if (skill1) skill1.style.width = "95%";
-        if (skill2) skill2.style.width = "85%";
-        if (skill3) skill3.style.width = "80%";
+        document.querySelectorAll(".w3-dark-grey").forEach(skill => {
+            if (skill.textContent.includes("95%")) skill.style.width = "95%";
+            if (skill.textContent.includes("85%")) skill.style.width = "85%";
+            if (skill.textContent.includes("80%")) skill.style.width = "80%";
+        });
     }, 500);
 };
+
 
   </script>
 </body>
