@@ -293,13 +293,21 @@
   <script>
 window.onload = function() {
     setTimeout(function() {
-        document.querySelectorAll(".w3-dark-grey").forEach(skill => {
-            if (skill.textContent.includes("95%")) skill.style.width = "95%";
-            if (skill.textContent.includes("85%")) skill.style.width = "85%";
-            if (skill.textContent.includes("80%")) skill.style.width = "80%";
+        let skills = [
+            { id: "skill1", width: "95%" },
+            { id: "skill2", width: "85%" },
+            { id: "skill3", width: "80%" }
+        ];
+
+        skills.forEach(skill => {
+            let elements = document.querySelectorAll(`#${skill.id}`);
+            elements.forEach(el => {
+                el.style.width = skill.width;
+            });
         });
     }, 500);
 };
+
 
 
   </script>
