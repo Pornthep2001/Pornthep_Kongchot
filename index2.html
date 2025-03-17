@@ -205,41 +205,85 @@
       <div class="w3-container w3-padding-16">
         <p class="w3-text-white" style="font-size: 20px;"><strong>รูปภาพที่เกี่ยวข้อง (Related Images):</strong></p>
         <div class="w3-row-padding work-images">
-      
           <!-- รูปภาพที่ 1 -->
-          <div class="w3-col s12" style="padding: 10px;">
-            <img src="1.png" alt="ภาพการทำงาน 1">
-            <p class="w3-text-white" style="text-align: center;">1.ทำระบบ ZohoCRM/Desk เก็บข้อมูลลูกค้าและCase ต่าง ๆ</p>
+          <div class="w3-col s12 m4" style="padding: 10px;">
+            <div class="image-card">
+              <img src="1.png" alt="ภาพการทำงาน 1" class="w3-image w3-hover-opacity">
+              <p class="w3-text-white" style="text-align: center;">1.ทำระบบ ZohoCRM/Desk เก็บข้อมูลลูกค้าและCase ต่าง ๆ</p>
+            </div>
           </div>
-      
+          
           <!-- รูปภาพที่ 2 -->
-          <div class="w3-col s12" style="padding: 10px;">
-            <img src="2.png" alt="ภาพการทำงาน 2">
-            <p class="w3-text-white" style="text-align: center;">2.ตั้งค่าและดูแลระบบโทรศัพท์PBXภายในองค์กร</p>
+          <div class="w3-col s12 m4" style="padding: 10px;">
+            <div class="image-card">
+              <img src="2.png" alt="ภาพการทำงาน 2" class="w3-image w3-hover-opacity">
+              <p class="w3-text-white" style="text-align: center;">2.ตั้งค่าและดูแลระบบโทรศัพท์PBXภายในองค์กร</p>
+            </div>
+          </div>
+          
+          <!-- รูปภาพที่ 3 -->
+          <div class="w3-col s12 m4" style="padding: 10px;">
+            <div class="image-card">
+              <img src="3.png" alt="ภาพการทำงาน 3" class="w3-image w3-hover-opacity">
+              <p class="w3-text-white" style="text-align: center;">3.ใช้ Github ทำคู่มือสอนการใช้งานโปรแกรม</p>
+            </div>
           </div>
       
-         <!-- รูปภาพที่ 3 -->
-           <div class="w3-col s12" style="padding: 10px;">
-           <img src="3.png" alt="ภาพการทำงาน 3">
-           <p class="w3-text-white" style="text-align: center;">3.ใช้ Github ทำคู่มือสอนการใช้งานโปรแกรม</p>
-           </div>
-
           <!-- รูปภาพที่ 4 -->
-          <div class="w3-col s12" style="padding: 10px;">
-            <img src="4.png" alt="ภาพการทำงาน 4">
-            <p class="w3-text-white" style="text-align: center;">4.ตัดต่อคู่มือการใช้งานโปรแกรมลง YouTubeด้วยAdobe Premiere Pro</p>
+          <div class="w3-col s12 m4" style="padding: 10px;">
+            <div class="image-card">
+              <img src="4.png" alt="ภาพการทำงาน 4" class="w3-image w3-hover-opacity">
+              <p class="w3-text-white" style="text-align: center;">4.ตัดต่อคู่มือการใช้งานโปรแกรมลง YouTubeด้วยAdobe Premiere Pro</p>
+            </div>
           </div>
       
           <!-- รูปภาพที่ 5 -->
-            <div class="w3-col s12" style="padding: 10px;">
-            <img src="5.png" alt="ภาพการทำงาน 5">
-            <p class="w3-text-white" style="text-align: center;">5.รับสายโทรศัพท์ลูกค้าและแก้ไขปัญหาต่าง ๆ</p>
+          <div class="w3-col s12 m4" style="padding: 10px;">
+            <div class="image-card">
+              <img src="5.png" alt="ภาพการทำงาน 5" class="w3-image w3-hover-opacity">
+              <p class="w3-text-white" style="text-align: center;">5.รับสายโทรศัพท์ลูกค้าและแก้ไขปัญหาต่าง ๆ</p>
             </div>
-
+          </div>
+      
           <!-- รูปภาพที่ 6 -->
-           <div class="w3-col s12" style="padding: 10px;">
-           <img src
-
+          <div class="w3-col s12 m4" style="padding: 10px;">
+            <div class="image-card">
+              <img src="6.png" alt="ภาพการทำงาน 6" class="w3-image w3-hover-opacity">
+              <p class="w3-text-white" style="text-align: center;">6.ดูแลอุปกรณ์ITต่าง ๆในบริษัท</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .image-card {
+          position: relative;
+          transition: transform 0.3s ease;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+      
+        .image-card:hover {
+          transform: scale(1.05);
+        }
+      
+        .w3-hover-opacity:hover {
+          opacity: 0.7;
+        }
+      
+        .w3-col img {
+          width: 100%;
+          border-radius: 8px;
+        }
+      
+        /* Mobile view adjustments */
+        @media screen and (max-width: 768px) {
+          .w3-col {
+            margin-bottom: 20px;
+          }
+        }
+      </style>
+      
     <!-- ปุ่มย้อนกลับไปหน้าแรก -->
     <a href="index.html" class="back-button"><i class="fa fa-arrow-left"></i> ย้อนกลับ</a>
   </div>
