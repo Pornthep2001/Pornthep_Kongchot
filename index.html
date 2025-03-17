@@ -18,26 +18,7 @@
     /* กำหนด Margin ซ้ายให้กับเนื้อหา */
     #main {margin-left: 120px}
     /* สำหรับหน้าจอขนาดเล็ก */
-    @media only screen and (max-width: 600px) {
-  body, h1, h2, h3, h4, h5, h6 {
-    line-height: 1.5; /* ลดการเว้นระยะบรรทัด */
-  }
-
-  .w3-bar-item, .w3-button, .w3-text-grey {
-    font-size: 18px; /* ปรับขนาดตัวอักษรให้เล็กลงในมือถือ */
-    padding: 10px 5px; /* ลดช่องว่างในปุ่ม */
-  }
-
-  .w3-container {
-    padding: 15px; /* เพิ่มช่องว่างภายใน */
-  }
-
-  .w3-row-padding {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
   </style>
 </head>
 <body class="w3-black">
