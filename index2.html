@@ -118,15 +118,24 @@
       margin-bottom: 16px;
     }
 
-    /* ปรับระยะห่างในมือถือ */
     @media (max-width: 767px) {
-      h2 {
-        font-size: 22px;
-      }
-      .w3-container p {
-        font-size: 18px;
-      }
-    }
+  h2 {
+    font-size: 22px;
+  }
+  .w3-container p {
+    font-size: 18px;
+  }
+  .w3-container ul {
+    padding-left: 20px; /* ลดระยะห่างของรายการ */
+  }
+  .w3-container li {
+    font-size: 18px; /* ปรับขนาดตัวอักษร */
+  }
+  .w3-container li + li {
+    margin-top: 5px; /* เพิ่มระยะห่างระหว่างรายการ */
+  }
+}
+
 
     /* ปรับรูปภาพ */
     .work-images img {
