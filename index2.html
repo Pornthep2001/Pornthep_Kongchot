@@ -46,6 +46,7 @@
       padding: 20px;
     }
 
+    /* ส่วนของการ์ดประสบการณ์ */
     .experience-card {
       background: #1e1e1e;
       padding: 20px;
@@ -93,6 +94,39 @@
     .back-button:hover {
       background-color: #e1b700;
     }
+
+    /* ปรับระยะห่างในหัวข้อ */
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    /* เพิ่มระยะห่างระหว่างภาษาไทยและอังกฤษ */
+    .work-heading {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .work-heading span {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .w3-container p {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    /* ปรับระยะห่างในมือถือ */
+    @media (max-width: 767px) {
+      h2 {
+        font-size: 22px;
+      }
+      .w3-container p {
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -101,7 +135,7 @@
   <div class="navbar">
     <a href="index.html"><i class="fa fa-home"></i> HOME</a>
     <a href="index.html#about"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="index.html#education"><i class="fa fa-graduation-cap"></i>Education</a>
+    <a href="index.html#education"><i class="fa fa-graduation-cap"></i> Education</a>
     <a href="index.html#work"><i class="fa fa-briefcase"></i> Work Experience</a>
   </div>
 
@@ -109,50 +143,48 @@
     <h2 class="w3-text-light-grey">Carmen Software</h2>
     <hr style="width: 200px; border-color: #f1c40f;">
 
-   <!-- About Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-44" id="about">
-  <h2 class="w3-text-light-grey" style="font-size: 28px; text-align: center;">Work Experience</h2>
-  <hr style="width: 200px; border-color: #fff; margin: 0 auto;">
-  
-  <div class="w3-container w3-padding-16">
-    <p class="w3-text-white" style="font-size: 20px;"><strong>บริษัท/องค์กร (Company/Organization):</strong> Carmen Software</p>
-    <p class="w3-text-white" style="font-size: 20px;"><strong>ตำแหน่งงาน (Job Title):</strong> IT Support</p>
-    <p class="w3-text-white" style="font-size: 20px;"><strong>ระยะเวลา (Duration):</strong> 1 ปี 6 เดือน</p>
-  </div>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-44" id="about">
+      <h2 class="work-heading">
+        <span>Work Experience</span>
+        <span>ประสบการณ์การทำงาน</span>
+      </h2>
+      <hr style="width: 200px; border-color: #fff; margin: 0 auto;">
 
-  <div class="w3-container w3-padding-16">
-    <p class="w3-text-white" style="font-size: 20px;"><strong>บทบาทหน้าที่ (Responsibilities):</strong> Support ลูกค้าในการใช้งานโปรแกรมบัญชีและจัดซื้อ พร้อมรับสายโทรศัพท์และประสานงานกับฝ่ายต่าง ๆ</p>
-  </div>
+      <div class="w3-container w3-padding-16">
+        <p class="w3-text-white"><strong>บริษัท/องค์กร (Company/Organization):</strong> Carmen Software</p>
+        <p class="w3-text-white"><strong>ตำแหน่งงาน (Job Title):</strong> IT Support</p>
+        <p class="w3-text-white"><strong>ระยะเวลา (Duration):</strong> 1 ปี 6 เดือน</p>
+      </div>
 
-  <div class="w3-container w3-padding-16">
-    <p class="w3-text-white" style="font-size: 20px;"><strong>ความสำเร็จ (Achievements/Key Accomplishments):</strong></p>
-    <ul class="w3-text-white" style="font-size: 20px; list-style-type: square; padding-left: 40px;">
-      <li>Support และแก้ไขปัญหาให้กับลูกค้าบัญชีและจัดซื้อได้</li>
-      <li>ทำคู่มือการสอนการใช้งานโปรแกรม</li>
-      <li>ทำระบบโทรศัพท์PBX</li>
-      <li>ตัดต่อคู่มือการใช้งานโปรแกรมลง YouTube</li>
-      <li>ทำระบบ ZohoCRM/Desk เก็บข้อมูลลูกค้า</li>
-    </ul>
-  </div>
+      <div class="w3-container w3-padding-16">
+        <p class="w3-text-white"><strong>บทบาทหน้าที่ (Responsibilities):</strong> Support ลูกค้าในการใช้งานโปรแกรมบัญชีและจัดซื้อ พร้อมรับสายโทรศัพท์และประสานงานกับฝ่ายต่าง ๆ</p>
+      </div>
 
-  <<p class="w3-text-white" style="font-size: 20px;">
-    <strong>ทักษะที่ได้รับ (Skills Acquired):</strong>
-  </p>
-  <ul class="w3-text-white" style="font-size: 20px; list-style-type: circle; padding-left: 40px;">
-    <li><strong>Customer Service:</strong> การบริการลูกค้าและการแก้ไขปัญหาต่าง ๆ ที่เกิดขึ้น</li>
-    <li><strong>Accounting:</strong> การทำบัญชีพื้นฐาน</li>
-    <li><strong>Inventory:</strong> การจัดการสินค้าคงคลังและการติดตามสต็อกการออกPR/PO/Receivingและอื่น ๆ</li>
-    <li><strong>PABX:</strong> การตั้งค่าและดูแลระบบโทรศัพท์ภายในองค์กร</li>
-    <li><strong>HTML:</strong> ความสามารถในการเขียนและแก้ไขเว็บไซต์พื้นฐาน</li>
-  </ul>
-  
+      <div class="w3-container w3-padding-16">
+        <p class="w3-text-white"><strong>ความสำเร็จ (Achievements/Key Accomplishments):</strong></p>
+        <ul class="w3-text-white" style="font-size: 20px; list-style-type: square; padding-left: 40px;">
+          <li>Support และแก้ไขปัญหาให้กับลูกค้าบัญชีและจัดซื้อได้</li>
+          <li>ทำคู่มือการสอนการใช้งานโปรแกรม</li>
+          <li>ทำระบบโทรศัพท์ PBX</li>
+          <li>ตัดต่อคู่มือการใช้งานโปรแกรมลง YouTube</li>
+          <li>ทำระบบ ZohoCRM/Desk เก็บข้อมูลลูกค้า</li>
+        </ul>
+      </div>
 
-  <div class="w3-container w3-padding-16">
-    <p class="w3-text-white" style="font-size: 20px;"><strong>เหตุผลในการออก(Reason for Leaving):</strong>เนื่องจากต้องย้ายกลับบ้านเกิดเพื่อดูแลคุณแม่ที่ประสบปัญหาด้านสุขภาพ"
-    </p>
-  </div>
-</div>
+      <p class="w3-text-white"><strong>ทักษะที่ได้รับ (Skills Acquired):</strong></p>
+      <ul class="w3-text-white" style="font-size: 20px; list-style-type: circle; padding-left: 40px;">
+        <li><strong>Customer Service:</strong> การบริการลูกค้าและการแก้ไขปัญหาต่าง ๆ ที่เกิดขึ้น</li>
+        <li><strong>Accounting:</strong> การทำบัญชีพื้นฐาน</li>
+        <li><strong>Inventory:</strong> การจัดการสินค้าคงคลังและการติดตามสต็อกการออก PR/PO/Receiving และอื่น ๆ</li>
+        <li><strong>PABX:</strong> การตั้งค่าและดูแลระบบโทรศัพท์ภายในองค์กร</li>
+        <li><strong>HTML:</strong> ความสามารถในการเขียนและแก้ไขเว็บไซต์พื้นฐาน</li>
+      </ul>
 
+      <div class="w3-container w3-padding-16">
+        <p class="w3-text-white"><strong>เหตุผลในการออก (Reason for Leaving):</strong> เนื่องจากต้องย้ายกลับบ้านเกิดเพื่อดูแลคุณแม่ที่ประสบปัญหาด้านสุขภาพ</p>
+      </div>
+    </div>
 
     <!-- ปุ่มย้อนกลับไปหน้าแรก -->
     <a href="index.html" class="back-button"><i class="fa fa-arrow-left"></i> ย้อนกลับ</a>
